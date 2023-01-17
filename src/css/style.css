@@ -1,0 +1,17 @@
+@import url(ficha.css);
+
+:root {
+    --preto: #000000;
+    --font-principal:'Kanit';
+}
+
+body {
+    box-sizing: border-box;
+    background: url(../img/rpg-bg.jpg);
+    font-family: var(--font-principal);
+    border: solid 5px var(--preto);
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 1rem;
+}

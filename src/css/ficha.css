@@ -1,0 +1,11 @@
+.ficha {
+    display: flex;
+    justify-content: center;
+}
+
+.ficha__titulo {
+    display: inline-block;
+    font-size: 1.2rem;
+    border: solid 3px var(--preto);
+    padding: 5px;
+}
