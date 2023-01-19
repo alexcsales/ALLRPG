@@ -7,7 +7,9 @@
 
 body {
     box-sizing: border-box;
-    background: url(../img/rpg-bg.jpg);
+    background: url(../img/Background.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
     font-family: var(--font-principal);
     border: solid 5px var(--preto);
     border-radius: 25px;
