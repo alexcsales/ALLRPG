@@ -2,6 +2,7 @@
 
 :root {
     --preto: #000000;
+    --branco: #FFFFFF;
     --font-principal:'Kanit';
 }
 
@@ -14,5 +15,5 @@ body {
     border-radius: 25px;
     font-size: 16px;
     font-weight: 400;
-    margin: 1rem;
+    margin: 0.3rem;
 }

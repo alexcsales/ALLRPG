@@ -84,3 +84,9 @@ select {
 	font-weight: inherit;
 	font-family: inherit;
 }
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
