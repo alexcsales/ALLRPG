@@ -17,37 +17,82 @@
 
 <body class="ficha">
     <header class="ficha__banner">
-        <img class="ficha__banner-imagem" src="src/img/Banner.svg" alt="">
-        <h1 class="ficha__banner-titulo">Ficha do personagem</h1>
+        <h1 class="ficha__banner-titulo">Dungeons & Dragons</h1>
     </header>
 
-    <main class="imformacoes">
-        <section class="imformacoes__jogador">
+    <main class="ficha__conteudo">
+        <form class="formulario__jogador" id="formulario-jogador">
+            <fieldset class="jogador__container">
+                <label class="jogador__texto" for="jogador">Nome do jogador:</label>
+                <input class="jogador__input" id="jogador" type="text" name="jogador" autofocus required/>
+            </fieldset>
+            <fieldset class="personagem__container">
+                <label class="jogador__texto" for="personagem">Personagem:</label>
+                <input class="jogador__input" id="personagem" type="text" name="personagem" required/>
+            </fieldset>
+            <fieldset class="personagem__container">
+                <label class="jogador__texto" for="classe">Classe:</label>
+                <input class="jogador__input" id="classe" type="text" name="classe" required/>
+            </fieldset>
+            <fieldset class="raca__container">
+                <label class="jogador__texto" for="raca">Raça:</label>
+                <input class="jogador__input" id="raca" type="text" name="raca" required/>
+            </fieldset>
+            <fieldset class="genero__container">
+                <label class="jogador__texto" for="genero">Gênero:</label>
+                <input class="jogador__input" id="genero" type="text" name="genero" required/>
+            </fieldset>
+            <fieldset class="idade__container">
+                <label class="jogador__texto" for="idade">Idade:</label>
+                <input class="jogador__input" id="idade" type="text" name="idade" required/>
+            </fieldset>
+            <fieldset class="altura__container">
+                <label class="jogador__texto" for="altura">Altura:</label>
+                <input class="jogador__input" id="altura" type="text" name="altura" required/>
+            </fieldset>
+            <fieldset class="peso__container">
+                <label class="jogador__texto" for="Peso">Peso:</label>
+                <input class="jogador__input" id="peso" type="text" name="Peso" required/>
+            </fieldset>
+            <button class="jogador__botao" type="submit">Salvar</button>
+        </form>
+        <div class="formulario__jogador" id="formulario-jogador-preenchido">
             <div class="jogador__container">
-                <label class="jogador__texto" for="">Nome:</label>
-                <label class="jogador__texto-resposta">ALEX CORREA SALES</label>
+                <label class="jogador__texto" for="jogador">Nome do jogador:</label>
+                <span id="jogador-salvo"></span>
             </div>
-            <div class="jogador__container">
-                <label class="jogador__texto" for="">Personagem:</label>
-                <label class="jogador__texto-resposta">Red</label>
-                <label class="jogador__texto" for="">Idade:</label>
-                <label class="jogador__texto-resposta">28</label>
-                <label class="jogador__texto" for="">Gênero:</label>
-                <label class="jogador__texto-resposta">Masculino</label>
-                
+            <div class="personagem__container">
+                <label class="jogador__texto" for="personagem">Personagem:</label>
+                <span id="personagem-salvo"></span>
             </div>
-            <div class="jogador__container">
-                <label class="jogador__texto" for="">Classe:</label>
-                <label class="jogador__texto-resposta">Guerreiro</label>
-                <label class="jogador__texto" for="">Raça:</label>
-                <label class="jogador__texto-resposta">Humano</label>
-                <label class="jogador__texto" for="">Altura:</label>
-                <label class="jogador__texto-resposta"> 1.74</label>
-                <label class="jogador__texto" for="">Peso:</label>
-                <label class="jogador__texto-resposta">85Kg</label>
+            <div class="classe__container">
+                <label class="jogador__texto" for="classe">Classe:</label>
+                <span id="classe-salvo"></span>
             </div>
-        </section>
+            <div class="raca__container">
+                <label class="jogador__texto" for="raca">Raça:</label>
+                <span id="raca-salvo"></span>
+            </div>
+            <div class="genero__container">
+                <label class="jogador__texto" for="genero">Gênero:</label>
+                <span id="genero-salvo"></span>
+            </div>
+            <div class="idade__container">
+                <label class="jogador__texto" for="idade">Idade:</label>
+                <span id="idade-salvo"></span>
+            </div>
+            <div class="altura__container">
+                <label class="jogador__texto" for="altura">Altura:</label>
+                <span id="altura-salvo"></span>
+            </div>
+            <div class="peso__container">
+                <label class="jogador__texto" for="Peso">Peso:</label>
+                <span id="peso-salvo"></span>
+            </div>
+            <button class="jogador__botao" id="jogador-reset" type="submit">Reset</button>
+        </div>
     </main>
+    <script src="index.js"></script>
 </body>
 
 </html>

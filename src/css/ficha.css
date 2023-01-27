@@ -1,40 +1,100 @@
 .ficha {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.2rem;
 }
 
 .ficha__banner {
-    position: relative;
-    margin-bottom: 2.5rem;
+  background-image: url(../img/Banner.svg);
+  background-position: center;
+  background-size: 25rem;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 2rem 0;
 }
 
 .ficha__banner-titulo {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 0.7rem;
+  margin: 0 5.1rem;
 }
 
-.ficha__banner-imagem {
-    width: 25rem;
-    height: 20rem;
-    position: absolute;
-    top: -130px;
-    left: -120px;
- }
+.formulario__jogador {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
 
- .jogador__container {
-    display: flex;
-    font-size: 14px;
- }
+.jogador__texto {
+  font-weight: 700;
+  margin-right: 0.2rem;
+}
 
- .jogador__texto {
-    font-weight: 700;
- }
+.jogador__input {
+  width: 90%;
+  height: 1rem;
+  border: solid 1px var(--preto);
+  text-align: center;
+  margin-right: 0.2rem;
+}
 
- .jogador__texto-resposta {
-    text-decoration: underline;
-    padding-bottom: 0.7rem;
-    margin-right: 0.5rem;
- }
+.jogador__container {
+  grid-column: span 4;
+  grid-row: 1;
+}
+
+.personagem__container {
+  grid-column: span 2;
+  grid-row: 2;
+}
+
+.classe__container {
+  grid-column: span 2;
+  grid-row: 2;
+}
+
+.raca__container {
+  grid-column: span 2;
+  grid-row: 3;
+}
+
+.genero__container {
+  grid-column: span 2;
+  grid-row: 3;
+}
+
+.idade__container {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.altura__container {
+  grid-column: span 2;
+  grid-row: 4;
+  padding: 0 2rem;
+  justify-self: center;
+}
+
+.peso__container {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+.jogador__botao {
+  grid-column: span 4;
+  grid-row: 5;
+  width: 5rem;
+  justify-self: center;
+  border: solid 2px var(--preto);
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+.jogador__botao:active {
+  color: var(--branco);
+  border: solid 2px var(--branco);
+}
