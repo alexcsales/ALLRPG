@@ -1,4 +1,6 @@
-@import url(ficha.css);
+@import url(header.css);
+@import url(jogador.css);
+@import url(personagem.css);
 
 :root {
     --preto: #000000;
