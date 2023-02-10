@@ -1,16 +1,16 @@
-.formulario__jogador {
+.formulario__usuario {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
 }
 
-.jogador__texto {
+.usuario__texto {
   font-weight: 700;
   margin-right: 0.2rem;
 }
 
-.jogador__input {
+.usuario__input {
   width: 90%;
   height: 1rem;
   border: solid 1px var(--preto);
@@ -63,10 +63,11 @@
 .botao {
   grid-column: span 4;
   grid-row: 5;
-  width: 5rem;
+  width: 7rem;
   justify-self: center;
   border: solid 2px var(--preto);
   border-radius: 5px;
+  padding: 0 0.5rem;
   margin: 0.5rem;
 }
 

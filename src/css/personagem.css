@@ -1,0 +1,89 @@
+.personagem__status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: baseline;
+    margin-bottom: 2rem;
+}
+
+.personagem__texto {
+    font-weight: 700;
+}
+
+.personagem__input {
+    width: 50%;
+    height: 1rem;
+    border: solid 1px var(--preto);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.vida__container {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.vida__entrada {
+    display: none;
+}
+
+.barra__vida {
+    display: flex;
+}
+
+.barra__botao {
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.2rem;
+    border: solid 1px var(--preto);
+}
+  
+  .progresso__vida, .progresso__mana {
+    background-color: #ccc;
+    display: flex;
+    width: 80%;
+    height: 0.5rem;
+    border: solid 1px var(--preto);
+    text-align: center;
+    padding: 5px;
+    --progresso: 10;
+  }
+  .pontos-vida {
+    position: absolute;
+    right: 75%;
+    left: 25%;
+    align-self: center;
+    font-size: 0.8rem;
+  }
+  
+  .progresso__vida::before{
+    content:'';
+    width: calc(var(--progresso) * 10%);
+    background-color: hsl( calc(var(--progresso) * 12) , 80%, 50%);
+    transition: all 0.2s ease;
+  }
+
+  .progresso__mana::before{
+    content:'';
+    width: calc(var(--progresso) * 10%);
+    background-color: blue;
+    transition: all 0.2s ease;
+  }
+
+.mana__container {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.nivel__container {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.status__container {
+    grid-column: 1;
+    grid-row: 3;
+}

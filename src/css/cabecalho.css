@@ -1,0 +1,38 @@
+ .ficha__cabecalho {
+   border-bottom: solid 2px var(--preto);
+   margin-bottom: 1.5rem;
+ }
+
+ .cabecalho__banner {
+   background-image: url(../img/Banner.svg);
+   background-position: center;
+   background-size: 25rem;
+   background-repeat: no-repeat;
+   text-align: center;
+   position: relative;
+   inset: 0;
+   padding: 2rem 0;
+ }
+
+ .cabecalho__titulo {
+   font-size: 1.4rem;
+   font-weight: 700;
+   padding-bottom: 0.7rem;
+   margin: 0 5.1rem;
+ }
+
+ .cabecalho__menu {
+   display: flex;
+   width: 100vw;
+   justify-content: space-around;
+   border-top: solid 2px var(--preto);
+   padding: 0.5rem 0;
+ }
+
+ .menu__lista-item {
+   font-weight: 700;
+ }
+
+ .ativo {
+   border-bottom: solid 2px var(--preto);
+ }

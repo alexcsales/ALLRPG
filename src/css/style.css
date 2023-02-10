@@ -1,21 +1,52 @@
-@import url(header.css);
-@import url(jogador.css);
+@import url(cabecalho.css);
+@import url(usuario.css);
 @import url(personagem.css);
 
 :root {
     --preto: #000000;
     --branco: #FFFFFF;
-    --font-principal:'Kanit';
+    --font-principal: 'Kanit';
+    --progress: 10;
 }
 
-body {
+.ficha {
     box-sizing: border-box;
     background: url(../img/Background.png);
     background-size: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: var(--font-principal);
-    border: solid 5px var(--preto);
-    border-radius: 25px;
     font-size: 16px;
     font-weight: 400;
-    margin: 0.3rem;
+    color: var(--preto);
+    border: solid 5px var(--preto);
+    padding: 0 0.2rem;
+}
+
+.alerta__container {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    padding: 5% 0;
+    padding-right: 20%;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+}
+
+.alerta__conteudo {
+    background: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0%;
+    max-width: 330px;
+    height: max-content;
+    text-align: center;
+    border-radius: 8px;
+    padding: 40px 16px 16px;
 }

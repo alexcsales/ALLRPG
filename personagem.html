@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <title>Ficha do Personagem</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body class="ficha">
+    <header class="ficha__cabecalho">
+        <div class="cabecalho__banner">
+            <h1 class="cabecalho__titulo">Dungeons & Dragons</h1>
+        </div>
+        <ul class="cabecalho__menu">
+            <li class="menu__lista"><a href="index.html" class="menu__lista-iten">Home</a></li>
+            <li class="menu__lista"><a href="#" class="menu__lista-iten ativo">Personagem</a></li>
+            <li class="menu__lista"><a href="#" class="menu__lista-iten">Itens</a></li>
+            <li class="menu__lista"><a href="#" class="menu__lista-iten">Anotações</a></li>
+        </ul>
+        <div class="alerta__container">
+            <div class="alerta__conteudo"> 
+            </div>
+        </div>
+    </header>
+    <main class="ficha__conteudo">
+        <section class="personagem">
+            <div class="personagem__status" id="personagem__status">
+                <div class="vida__container">
+                    <label class="personagem__texto" for="vida">Pontos de Vida (PV):</label>
+                    <input class="vida__entrada" type="number" min="0" max="100" step="1" value="10" id="vida" />
+                    <div class="barra__vida">
+                        <button class="barra__botao" id="subtrai" type="submit">-</button>
+                        <div class="progresso__vida"></div>
+                        <span class="pontos-vida"></span>
+                        <button class="barra__botao" id="soma">+</button>
+                    </div>
+                </div>
+                <div class="mana__container">
+                    <label class="personagem__texto" for="vida">Pontos de Mana (MP):</label>
+                    <input class="vida__entrada" type="number" min="0" max="100" step="1" value="10" id="vida" />
+                    <div class="barra__vida">
+                        <button class="barra__botao" id="subtrai" type="submit">-</button>
+                        <div class="progresso__mana"></div>
+                        <span class="pontos-mana"></span>
+                        <button class="barra__botao" id="soma">+</button>
+                    </div>
+                </div>
+                <div class="status__container">
+                    <label class="personagem__texto" for="status">Status:</label>
+                    <select class="personagem__select" name="" id="">
+                        <option value="">Envenenado</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/jogador.js"></script>
+    <script src="js/personagem.js"></script>
+</body>
+
+</html>
