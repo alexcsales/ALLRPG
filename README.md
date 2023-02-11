@@ -1,5 +1,4 @@
-# RPG
-<h1 align='center'>ALLRPG<h1>
+<h1 align='center'>📌ALLRPG<h1>
 <h3 align='center'>Projeto pessoal: Aplicação que simula a ficha de um RPG de forma automatizada.</h3>
 
 <h3>📄Tabela de conteúdos</h3>
@@ -35,7 +34,7 @@
     
  ```bash
  # Clonar este repositório:
- $ git clone https://github.com/alexcsales/RPG
+ $ git clone https://github.com/alexcsales/ALLRPG
  # Executar arquivo:
  $ No navegador, precione Ctrl + O e abra o arquivo index.html
  ```
