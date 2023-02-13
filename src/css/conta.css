@@ -1,16 +1,16 @@
-.formulario__usuario {
+.formulario__conta {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
 }
 
-.usuario__texto {
+.conta__texto {
   font-weight: 700;
   margin-right: 0.2rem;
 }
 
-.usuario__input {
+.conta__input {
   width: 90%;
   height: 1rem;
   border: solid 1px var(--preto);
